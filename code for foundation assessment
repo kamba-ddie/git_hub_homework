@@ -1,0 +1,73 @@
+# Question 3   
+word = "madam"
+
+def palindrome(word):
+    if word==word[::1]:
+        print(word)
+        print ("This is a palindrome")
+    else:
+        print("This is not a a palindrome")
+palindrome(word)
+
+#Question 4 -- origincally written in a different file
+
+import unittest
+from assessment import palindrome
+
+class TestPalindrome(unittest,Self):
+    """Testing if inital function works with different string words inputted"""
+    def test_palindrome(self):
+        self.assertEqual(palindrome("madam"))
+    """his test was to check the function works if there is a different sequence put in """
+    def test_value(self):
+        self.assertValueError(palindrome([4,2,2]))
+
+    test_palindrome()
+    test_value()
+
+if __name__ == "main":
+    unittest
+
+#Question 8 -  SQL question
+
+USE BookStore;
+
+SELECT (Books.book_name), author_name, (Books.sold_copies)
+FROM Authors
+FULL JOIN
+Books ON
+Authors.book_name = Books.book_name 
+GROUP BY sold_copies 
+limit 3;
+
+
+#Question 9 
+
+my_numbers = [3, 5, -4, 8, 11, 1, -1, 6]
+target_sum = 10
+
+
+def two_number_sum(array, input_target_sum):
+    try:
+        if all([isinstance(num, int) for num in array]) and isinstance(input_target_sum, int):
+            return two_number_calc(array, input_target_sum)
+        else:
+            raise TypeError
+    except:
+        print("Please check your input, all input must be numerical")
+
+
+def two_number_calc(array, input_target_sum):
+    output = []
+    for x in range(0, len(array)):
+        for y in range(0, len(array)):
+            if array[x] + array[y] == input_target_sum and x != y:
+                output.append(array[x])
+                output.append(array[y])
+                print(output)
+                return output
+    print(output)
+    return output
+
+
+two_number_sum(my_numbers, target_sum)
