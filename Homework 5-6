@@ -1,0 +1,98 @@
+HOMEWORK WEEK 5-6 
+(handout for students) 
+TASK 1 (Agile Techniques) 
+Question 1
+Complete definitions for Scrum related key terminology provided below. 
+SCRUM CEREMONIES 
+·  Product backlog refinement is a type of meeting held toward the end of the sprint to check that the backlog has been achieved before the next one
+•	Sprint planning, this is when you prioritise the tasks in a sprint and plan the order they are going to be actioned
+•	  Daily scrum , this is held at the start of the day to see the progress in a sprint held by a scrum master.
+•	  Sprint review, this is where you review the work produced by the sprint and whether further additions need to be made on backlog tasks
+•	  Sprint retrospective, this is after the sprint where you discuss what was useful/ not useful to apply to the next sprints in the future. 
+SCRUM ROLES 
+•	·  ScrumMaster , is a person who follows the framework of the scrum to ensure tasks get completed
+•	·  Product Owner, is a person who maintains stakeholder developments
+•	·  Development Team, is a team who actions tasks from the scrum to develop the project
+Question 2 
+You are leading a development team that was given a task to create a new yoga booking system. 
+High level description of the system is as follows: 
+· It has a very simple interface to accept user input (bookings) and display classes information 
+· All bookings, appointments, schedules etc should be stored in a SQL database. 
+· There is a ‘backend’ system that should be written in Python to handle the logic and manage the data flow. 
+Your team has two weeks to build a simple prototype that will be shown to the client to seek their feedback and discuss further enhancements. 
+TASK 
+•	·  Break this task into smaller stories (chunks of work) for the team to work on. 
+•	·  Assume that one person works on one task. 
+•	·  Mark tasks that can be worked on in parallel and perhaps those that need to be worked on in particular order. 
+
+TEAM YOGA SYSTEM: DAYS 1- 4
+Member 1, Set up DB in SQL for Appointments (appointments as a priority of schedule)
+Member 2, Set up DB in SQL for Schedule
+Member 3, Make Python flow to allow input for Appointments(appointments as a priority of schedule)
+Member 4 Make Python flow to allow input into schedule, i.e. available slots 
+Member 5 Design interface for class information/ instructor profiles
+I’ve gone under the impression the Python flow can be created with dummy data before being connected to the real DB, so those can both be made in parallel
+DAYS 5-7
+Member 1 Connect DB to Python for Appointments 
+Member 2 Connect DB to Python for Schedule
+Member 3 Test adding input into Appointments, and Schedule
+Member 4 Connecting Python to API
+Member 5 Creating interface for class information/ instructor profiles with dummy data
+	This is under the impression the separate components were made in the last sprint that these moving parts can be connected in the next stage with testing to begin. Dummy data is also inserted to make the flow look more realistic. 
+DAYS 7-9
+Member 1 Testing Python to DB connection and fixing bugs
+Member 2 Testing Python to DB connection and fixing bugs
+Member 3 Testing API and fixing bugs
+Member 4 Testing API
+Member 5 Testing functionality of interface 
+This is to do the final testing which could be done by any member of the team on different components at the end of the project.
+DAY 10 
+Deployment of prototype, scrum review
+I used 10 days based on a 5-day working week across a 2 week period.
+
+TASK 2 (SQL) 
+Question 1 
+Design a cinema booking system. 
+Think how you would approach the problem and what are potential ways of solving it? 
+You do not need to write actual code, but describe the high-level approach: 
+•	·  Draw a list of key requirements 
+•	·  What are your main considerations? 
+•	·  What would be your common or biggest problems? 
+•	·  What components or tools would you potentially use? 
+•	·  You are welcome to draw a diagram (a very simple one) for the process flow to explain how it is going to work. 
+ 
+
+Requirements:
+o	To display film times and descriptions in a clear way to users
+o	To allow ease of booking for users
+o	To have a functional payment system to take money for bookings
+o	To display a schedule for bookings already purchased/made and payments taken
+o	Displaying a QR code ticket for purchases
+
+Main considerations:
+o	Security system for payments 
+o	Safeguarding personal data for registration in terms of GDRP and database security
+o	Having all data accessible to users i.e., Movie times, screen numbers 
+o	Displaying accurate data for schedules
+o	Gathering data on users can help generate a profile to adapt the system in terms of functionality and font size etc and simplicity of booking.
+o	Generation of QR codes needs to be instant
+Problems:
+o	Refreshing data in the database to keep films and times accurate with new releases etc, 
+o	Being able to access all data required quickly as big databases are slower, lot of movies, cinemas all accessing it at once will slow it down
+o	Safe payment system that won’t take money if it the session has taken too long.
+o	People selecting seats at the same time.
+o	Seats not being available/reserved even if transaction never occurred
+o	Duplication of QR codes
+
+Components/tools:
+o	SQL database for storing data on film times, screen numbers, creating different indexes in table connected to different parts of system to make accessing films and times much quicker for users
+o	Python flow to access input from users for:
+	what film they want to see,
+	which cinema they want to visit
+	which date they will visit
+	which time they will visit
+o	Using ID’s and primary keys in SQL to prevent access to personal data to anyone unauthorised to do so. Personal data includes name, date of birth for viewing age restricted films and payment information. 
+o	Adding in an inbuilt session time out functionality which removes selection of cinema seats after set time frame, to keep more accurate real time data of availability.
+o	QR code system implemented from third party could also be considered.
+o	Payment system from third party for safety could also be considered
+	
