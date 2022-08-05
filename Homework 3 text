@@ -1,0 +1,39 @@
+HOMEWORK WEEK 3
+ 
+ 
+This week’s homework is a research based one. You’ll need to conduct independent learning, in combination with existing material (where available), to answer the questions below. The reason for this homework is to ensure you are aware of critical topics in CS. These topics were difficult to cover within the existing lesson schedules, but due to their importance are placed within the homework instead. Make sure to research, learn and then answer the following:
+ 
+What is OOP? How may you have already made use of it (e.g. class components)?
+Feel free to give a fairly light answer here - as you’ll need to do the deep-part / actual meat in the following questions when you cover each of OOP’s pillars
+
+
+OOP stands for object oriented programming. This is programming that focuses on storing data, properties and methods in classes that can be then called and reused as objects. Unlike functional programming, which involves the usage of algorithms/ functions or particular logics to complete tasks, OOP focuses on the data rather than what is affecting it.
+
+What is Polymorphism?
+Polymorphisms is when a child class can use a function of the same name which is also defined in the parent class but can produce different results. The method can be called upon the same way but through polymorphism a different result will be produced. The main benefit of polymorphism in OOP is the inversion of source code and how it influences  run time dependencies. It is useful because it not only improves the readability of code but increases the reusability of methods. A single variable name can also carry multiple types of data when using polymorphism in OOP.
+
+What is Abstraction?
+
+Abstraction is a concept in OOP where only the required pieces of information can be available to the outside, and the lower level complex implementations are hidden. Abstraction is mostly used at the design level when planning a program without the complexities of implementation yet. It uses abstract classes or interfaces to achieve this. Advantages of abstraction is that it increases security and code reusability. The data that is hidden can be called on through abstraction and reduces complexity by removing that information. This also makes the code clearer and easier to maintain.
+What is Inheritance?
+
+Child classes can inherit attributes/properties and methods from their parent classes. This can be done by extending the child class to the parent class. There are four kinds of inheritance, single, multiple, multi level and hierarchical. Single is where a child class inherits properties from one parent class. Multiple accesses properties from more than one parent class. Multilevel is when a child class becomes a parent class to a separate child class. Hierarchical is when a child class inherits multiple inheritance classes from the same base or parent class.
+Key benefits are code reusability, its ability to pass properties down into subclasses from the child class. To call on functions/methods from the parent class you use the function super(). Other processes such as overriding also come into use with parent classes and inheritance where a child class can override a function in a parent class when executed.
+
+What is encapsulation?
+Encapsulation is similar to abstraction where data is hidden, however in encapsulation it keeps everything together into a singular unit. So all functions/methods and data attributes. It is better suited to the implementation level concept. Data hiding is part of the encapsulation. It uses getter and setter to access the data externally because of the private modifiers that are used to hide data and achieve this concept. The advantages are increased security and it minimizes error by bundling everything together internally. 
+What is:
+Agile development?
+Agile development in iterative approach to software development. Each iteration takes a short time frame and it is designed to deliver change and updates quickly with fewer changes. Generally a single phase takes 6 to 18 months and in this all the risk factors are predicted before it starts. There are scrum masters and project owners. Scrum masters manage progress and host daily scrum meetings where teams update their progress and also communicate with the project owners. The project owners hold the investor interests and update the scrum manager with requirement details, they also oversee that the project meets the requirements that they have set. Agile development pushes the first usable product to get something that meets the requirements published and iterative improves and adds parts to it. This reduces big updates being required. Disadvantages included fragmented output and no finite end if a project, without clear goals it is also difficult to track progress on agile projects.
+Waterfall development?
+Waterfall development is a sequential development method which follows the process from start to finish through all the stages of development. It flows through all the processes like analysis, design, testing etc. It follows the principle measure twice cut one. It typically follows 5 stages, requirements, design,implementation, verification and testing and finally maintenance and deployment. The benefits of waterfall is that it is simple and is commonplace so it has a good track record. Each contributor can plan their time and be responsible for their parts because they know what to do and a set time limit.It is easy to track progress with defined milestones. Disadvantages are that the chronological process can be more time intensive and difficult to update and if one process is delayed it pushes the whole project back. It is used by people who are unlikely to update their requirements and who give a clear view of what they want their projects to deliver at the start. 
+
+How do they differ? Which is suited for which situation?
+
+Agile is a more adaptable methodology, versus waterfall executes better if the goals are clear from the start of a project.
+Waterfall is clearer to track progress in a project, agile methodology has more routine check ins in scrum meetings to keep teams focused, and you can notice in waterfall methodology with looming deadlines increased pressures.
+Agile does keep goals and deadlines brief and being part of a scrum has a fast pace, but in waterfall you can ascertain your end goal from the start of the project which can give project members more confidence in what they are doing. 
+ 
+Once complete, please return to your instructor your answers! Remember:
+●      Justify and be critical of everything! This distinguishes a great answer from a good answer
+●      Analyse - why does x even exist? Who needs it or uses it? Who is it important to, what’s the point of it at all?
