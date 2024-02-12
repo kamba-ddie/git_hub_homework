@@ -1,0 +1,54 @@
+1.	What is the program? 
+A program is a set of operations and tasks for a computer to complete.
+2.	What is the process? 
+1.	Process is an instance of a program being completed on a computer. 
+3.	What is Cache? 
+1.	Cache is data that is temporarily stored in the CPU, it can hold instructions that the CPU uses regularly. 
+4.	What is Thread and Multithreading?
+1.	A thread is a self contained set of instructions, and multithreading is using more than one CPU unit to perform the same set of instructions. 
+5.	What is GIL in Python and how does it work
+1.	GIL stands for Global interpreter lock. This limits the access a person has to python objects at a time. It is useful for protecting code.
+6.	What is Concurrency and Parallelism and what are the differences?
+1.	Concurrency is multiple processes happening from the same CPU
+2.	Parallelism is using more than one instance of a process being executed from multiple CPU’s in parallel, 
+3.	The main difference is that Concurrency uses multiple processes at once and parallelism splits work load between CPU’s
+7.	What do these stand for in programming: DRY, KISS, BDUF 
+1.	Don’t repeat yourself
+2.	Keep it simple stupid
+3.	Big design up front 
+8.	What is Garbage collector? How does it work? 
+1.	Garbage collector gets unused objects and removes it, it is a built-in function to automatically delete the objects. 
+9.	What are ‘deadlock’ and ‘livelock’ in a relational database? 
+1.	Deadlock is when two or more processes are waiting to use the same resource so ‘lock’ when waiting until the resources are available to execute the function 
+2.	Livelock is when two or more processes are waiting to use the same resources but also rely on each other to complete the function, therefore the program never completes, 
+10.	What is Flask and what can we use it for? 
+1.	Flask is a python module and it can be used to connect python to an API. 
+2. DiscussthedifferencebetweenPython2andPython3 
+Python 2 is legacy software which has been going out of use. Python 3, is more widely used and  more popularly used. Python 3 is more readable that Python 2 in terms of writing its functions. There are syntax differences for functions like range() in Python 3 and xrange() in python 2. The ordering rules are different and more complicated in Python2. For loops need to be defined in Python 2 but not in Python 3.
+3. Write a function that can define whether a word is a Palindrome or not (a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam) 
+Answer in .py file
+4. Write tests for the newly created Palindrome function. Provide brief explanation for your test case options. 8 points
+Answers in py.file
+5. Agile methodology, Scrum:name at least 3 types of meetings that are exercised by Agile teams and describe the objective of each meeting. 
+Daily Scrum, is a meeting held daily to check in on the progress of the current sprint in place. 
+Sprint meeting to determine which tasks from the backlog will be undertaken in the next sprint. 
+Sprint Review this meeting is to review customer feedback and strategize implementation for the next sprint. 
+Spring retrospective after deployment of the shippable product to review the process
+
+6. Exception handling in Python, explain what each of the following blocks means in the program flow: 
+Try, this is the first part of the exception handling, this block will run a query and if it does not run the program will flow to the except blocks. If it does it will go to the else block to run. 
+Except, this will run if the try block does not run, any number of except blocks can run for different clauses.
+Else, this will run if the try block does run, if try was stage 1 this is the next stage before the finally block or other else clauses. 
+ Finally- This is executed at the end of the try block, irrespective of whether it ran the except or else block. This is the last part to run and will end the block. 
+7. How can we connect a Python program (process) with a database? Explain how it works and how do we fetch / insert data into DB tables from a python program. 
+A python program can be connected to a database with a module called mysql.connector. With this you can use the import syntax to call on databases like you would separate files or modules in python, i.e “ import file.txt” or ‘import table_name” respectively. mysql.connector works by calls the data from the database into pycharm. To access the database the login credentials such as the root password have to be send from pycharm into mysql. These credentials are usually stored in a separate file to where the data handling occurs. This give python the ability to take data from the database securely by having that information separate to the main workspace. Data can be fetched using the same kinds of queries that you would use in mySQL or other relational database programs, but just in defined functions. The tables have to be opened and closed like you would for a text file when inserting data in python. 
+
+8. Given two SQL tables below: authors and books.
+ ● The authors dataset has 1M+ rows
+● The books dataset also has 1M+ rows 
+Create an SQL query that shows the TOP 3 authors who sold the most books in total! 
+Answer in .py file , hope this is okay.
+
+9. TWO NUMBER SUM: 
+
+Answer in .py file.
