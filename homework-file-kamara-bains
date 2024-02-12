@@ -1,0 +1,61 @@
+"""
+# Two Sum
+# -------------------------------------------------------------------------------------------------------------------------
+# Given an array of integers nums and an integer target, return two numbers inside that array such that they add up to target.
+# ​
+# You may assume that each input would have at least one solution, and you may not use the same element twice.
+# ​
+# You can return the answer in any order.
+# ​
+# EXAMPLE 1:
+# ---------------------------------------------------------------
+# Input: nums = [2,7,11,15], target = 9
+# Output: [2, 7]
+# Explanation: Because nums[0] + nums[1] == 9, we return [2, 7].
+# EXAMPLE 2:
+# ---------------------------------------------------------------
+# Input: nums = [3,2,4], target = 6
+# Output: [2, 4]
+# ​
+# EXAMPLE 3:
+# ---------------------------------------------------------------
+# Input: nums = [3,3], target = 6
+# Output: [3, 3]
+# ​
+# NOTES:
+# ---------------------------------------------------------------
+# - An input MAY HAVE no two numbers at all (an empty one still counts as a solution) - in this case, return a empty array
+# - It's an array of integer numbers - these numbers are not necessarily distinct / unique
+# - Make sure to discuss your solution - what is the Big O Time & Space complexity? Was there anyway you could've done...
+# ...better or not? Why or why not? Justify.
+# """
+# ​
+# ​
+#The solution below is bad for time complexity as it has a nested for loop, this means the time complexity is n^2. 
+# It is a const for memory complecity, this is because there are not any extra variables declared.
+# def two_number_calc(array, input_target_sum):
+#     for x in range(0, len(array)):
+#         for y in range(0, len(array)):
+#             if array[x] + array[y] == input_target_sum and x != y:
+#                 return [array[x],array[y]]
+#     return []
+
+
+# print(two_number_calc([3, 5, -4, 8, 11, 1, -1, 6], 10))
+
+# Correct example/ improved complexity
+#This solution has a time and space complexity of O(n). This is because there is only a singular for loop,
+# and use of a has map means it checks if a number that goes with sum - value is in the array for the length
+# # of the array. These reduces the functions needed in the array, and removes the need for a nested one 
+# like the example above. 
+
+def twoSum(numbers, target):
+    hashmap = {}
+    for i in range(len(numbers)):
+        p = target - numbers[i]
+        if p in hashmap:
+            return [p, numbers[i]]
+        hashmap[numbers[i]] = i
+    return []
+
+print(twoSum([13, 5, 6, 4], 20))
